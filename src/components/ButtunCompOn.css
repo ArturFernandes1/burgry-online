@@ -1,0 +1,26 @@
+#button-compra {
+    background-color: #dda518; /* Cor de fundo verde */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 12px 24px; /* Espaçamento interno */
+    text-align: center; /* Texto centralizado */
+    text-decoration: none; /* Nenhuma decoração de texto */
+    display: inline-block; /* Tipo de exibição */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para cor de fundo e sombra */
+    width: 200px;
+    margin-top: 25px;
+    margin-bottom: -15px;
+}
+
+#button-compra:hover {
+    background-color: #d3a01e; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra ao passar o mouse */
+}
+
+#button-compra:active {
+    background-color: #dda518;; /* Cor de fundo ao clicar */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2) inset; /* Sombra interna ao clicar */
+}

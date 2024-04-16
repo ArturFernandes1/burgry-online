@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sessaod{
+    background-color: black;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.container-sessaodireta{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1300px;
+    margin: 0 auto;  
+}
+.title-sessaodireta{
+    text-align:start;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+}
+.texto-sessaodireta p{
+    margin-top: 25px;
+}
+.texto-sessaodireta{
+    width: 580px;
+    color: white;
+    text-align: justify;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px; /* Espaço à esquerda */
+}
+.img-fluid-sessao {
+    width: 580px;
+    height: 400px;
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin-right: 20px;
+ 
+}
+
+
+.linha-amarela {
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #dda518;
+}
+.servicos {
+    column-count: 2; /* Divide o conteúdo em duas colunas */
+    column-gap: 10px; /* Define o espaço entre as colunas */
+}
+
+.servicos p {
+    position: relative; /* Necessário para o posicionamento correto dos ícones/pontos */
+    padding-left: 10px; /* Espaço para o ícone ou ponto */
+}
+
+.servicos p::before {
+    content: "•"; /* Caracter de ponto, pode ser substituído por ícones */
+    position: absolute; /* Posicionamento absoluto em relação ao parágrafo */
+    left: 0; /* Alinha o ponto à esquerda do parágrafo */
+    color: #aec52b; /* Cor do ponto ou ícone */
+    font-size: 35px; /* Tamanho do ponto */
+    line-height: 1; /* Alinhamento vertical do ponto com o texto */
+}
+
+@media screen and (max-width: 800px) {
+    .container-sessaodireta {
+        flex-direction: column; 
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .texto-sessaodireta {
+        text-align: justify;
+        margin-top: 50px;
+        margin-right: 18px;
+        margin-left: 18px; 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container0 h2 {
+        text-transform: uppercase;
+        font-size: 22px;
+        text-align: left;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .img-fluid-sessao{
+        width: auto;
+        height: 350px;
+        margin-top: 20px;
+        margin-left: 20;
+        margin-right: -10px; /* Corrigi o valor para incluir o "px" faltando */
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .img-fluid-sessao {
+        width: 350px;
+        height: 250px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: -10px; /* Corrigi o valor para incluir o "px" faltando */
+        margin-bottom: -15px;
+    }
+}

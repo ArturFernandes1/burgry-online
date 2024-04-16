@@ -1,0 +1,69 @@
+#card-principal{
+    background-color: black;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.container-cards{
+    max-width: 1300px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card1, .card2, .card3 {
+    display: flex;
+    flex-direction: row; /* Organiza os elementos lado a lado */
+    align-items: center; /* Alinha verticalmente ao centro */
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px 30px 4px 34px;
+    margin: 25px;
+    color: white;
+    width: 330px;
+}
+.card1{
+    background-color: #dda518;
+}
+.card2{
+    background-color: #006933;
+}
+.card3{
+    background-color: #D64433;
+}
+
+#button-compra-online{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-image {
+    width: 100px; /* ou qualquer outra largura */
+    height: 100px; 
+    margin-right: 20px;
+    margin-left: -15px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2, .card p {
+    margin: 5px 0; /* Espaçamento vertical entre o título e o parágrafo */
+}
+
+@media screen and (max-width: 778px) {
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+}
