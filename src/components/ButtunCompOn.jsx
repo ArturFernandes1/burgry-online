@@ -1,13 +1,11 @@
 import React from 'react';
 import "./ButtunCompOn.css"
 
-const ButtunCompOn = () => {
+const ButtunCompOn = ({ className, style }) => {
   return (
-        <>
-           <button id='button-compra'> Compre online</button>    
-        </>
-
+    <button className={`buttuon-comp-on ${className}`} style={style}>
+          Comprar
+      </button>
   );
 };
-
 export default ButtunCompOn;

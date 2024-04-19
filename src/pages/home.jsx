@@ -12,7 +12,7 @@ function Home() {
       <Navbar/>
       <Carousel/>
       <Card/>
-      <Sessaodupla/>
+  {/*     <Sessaodupla/> */}
       <Sessaodireta/>
 
     </>

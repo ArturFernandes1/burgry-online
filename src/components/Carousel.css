@@ -14,6 +14,14 @@
     max-width: 1400px;
     margin: 0 auto;  
 }
+.texto{
+    width: 500px;
+    color: white;
+    text-align: justify;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 60px; /* Espaço à esquerda */
+}
 .title{
     width: 400px;
     text-align:start;
@@ -26,17 +34,7 @@
     margin-top: 25px;
     color: white;
 }
-.img-fluid {
-    width: 520px;
-    height: 400px;
-    margin-top: 50px;
- 
-}
-.img-fluid:hover{
-    transform: scale(1.1);
-    transition: 0.2ms;
-      
-}
+
 
 .linha-amarela {
     width: 150px;
@@ -58,14 +56,6 @@
     margin-bottom: 10px;
     color: #DA9D00;
 }
-.texto{
-    width: 500px;
-    color: white;
-    text-align: justify;
-    margin-top: 100px;
-    margin-right: 100px;
-    margin-left: 60px; /* Espaço à esquerda */
-}
 
 .img-fluid {
     width: 520px;
@@ -74,7 +64,12 @@
     margin-left: 110px;
     margin-right: 40px;
     margin-bottom: 20px;
-  
+    
+}
+.img-fluid:hover{
+    transform: scale(1.1);
+    transition: 0.2ms;
+      
 }
 @media screen and (max-width: 800px) {
     .container1 {
@@ -82,44 +77,31 @@
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 768px) {
     .container1 {
         flex-direction: column; 
     }
     .texto {
+        width: auto;
         margin-top: 50px;
+        margin-bottom: 50px;
         margin-right: 18px;
         margin-left: 18px; 
-        width: 200px;
+    
+      
     }
     .title{
-        width: 200px;
+        width: auto;
         text-align:start;
         font-size: 32px;
         letter-spacing: 0.5px;
     
     }
     .texto p{
-        width: 200px;
+        width: auto;
         margin-top: 25px;
         color: white;
     }
-}
-
-
-
-@media screen and (max-width: 600px) {
-    .img-fluid {
-        width: auto;
-        height: 350px;
-        margin-top: 20px;
-        margin-left: 20;
-        margin-right: -10px; /* Corrigi o valor para incluir o "px" faltando */
-        margin-bottom: 15px;
-    }
-}
-
-@media screen and (max-width: 400px) {
     .img-fluid {
         width: 350px;
         height: 250px;
@@ -127,5 +109,22 @@
         margin-left: 20px;
         margin-right: -10px; /* Corrigi o valor para incluir o "px" faltando */
         margin-bottom: -15px;
+        margin: 0 auto;
+    }
+    .sub-itens{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      
+    }
+    .item{
+        margin: auto;
+        position: relative;
+        padding: 28px;
     }
 }
+
+
+
+

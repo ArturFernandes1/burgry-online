@@ -1,69 +1,96 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+}
 #card-principal{
     background-color: black;
     padding-top: 35px;
     padding-bottom: 35px;
 }
-
 .container-cards{
-    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding: 10px;
+    max-width: 1200px;
     margin: 0 auto;
-}
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.card1, .card2, .card3 {
-    display: flex;
-    flex-direction: row; /* Organiza os elementos lado a lado */
-    align-items: center; /* Alinha verticalmente ao centro */
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 10px 30px 4px 34px;
-    margin: 25px;
-    color: white;
-    width: 330px;
-}
-.card1{
-    background-color: #dda518;
-}
-.card2{
-    background-color: #006933;
-}
-.card3{
-    background-color: #D64433;
-}
-
-#button-compra-online{
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.card-image {
-    width: 100px; /* ou qualquer outra largura */
-    height: 100px; 
-    margin-right: 20px;
-    margin-left: -15px;
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.card h2, .card p {
-    margin: 5px 0; /* Espaçamento vertical entre o título e o parágrafo */
-}
-
-@media screen and (max-width: 778px) {
-    .cards {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        flex-direction: column;
-    }
     
 }
+.card-vermelho, .card-verde, .card-amarelo {
+  flex-grow: 2;
+  text-align: center;
+  margin: 10px;
+  padding: 50px;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #888, 0 0 10px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease-in-out;
+  color: white;
+  width: auto;
+  height: 100px;
+  justify-content: center;
+}
+
+.imagem {
+    width: 90px;
+    height: 70px;
+    transition: transform 0.6s; /* Adicione uma transição suave */
+  }
+
+/* Mudança */
+/* .card-vermelho {
+    background-color: #D64433;
+ 
+}
+.card-amarelo {
+    background-color: #dda518;
+}
+.card-verde {
+    background-color: #006933;;
+} */
+
+.card-vermelho, .card-amarelo, .card-verde {
+    display: flex;
+    padding: 20px;
+    color: black; /* Texto branco para contraste com o fundo vermelho */
+    background-color: white;
+}
+
+.coluna-imagem, .coluna-texto {
+    padding: 10px;
+}
+
+.coluna-imagem {
+    width: 40%;
+    display: flex;
+    align-items: center; /* Centraliza a imagem verticalmente */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+}
+
+.imagem {
+    max-width: 100%; /* Faz a imagem se ajustar à coluna */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.coluna-texto {
+    width: 60%;
+}
+
+/* #button-compra-online {
+    color: yellow;
+    cursor: pointer; 
+    text-decoration: underline;
+} */
+
+@media screen and (max-width: 768px) {
+  .card {
+      padding: 35px; /* Reduzir o espaçamento interno para telas menores */
+      flex-wrap: wrap;
+  }
+
+
+  
+}
+
+

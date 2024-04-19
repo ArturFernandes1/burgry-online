@@ -1,4 +1,4 @@
-#button-compra {
+.buttuon-comp-on{
     background-color: #dda518; /* Cor de fundo verde */
     color: white; /* Texto branco */
     border: none; /* Sem borda */
@@ -10,17 +10,17 @@
     border-radius: 8px; /* Bordas arredondadas */
     cursor: pointer; /* Cursor em forma de ponteiro */
     transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para cor de fundo e sombra */
-    width: 200px;
-    margin-top: 25px;
-    margin-bottom: -15px;
+    width: 180px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-#button-compra:hover {
+.buttuon-comp-on:hover {
     background-color: #d3a01e; /* Cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra ao passar o mouse */
 }
 
-#button-compra:active {
-    background-color: #dda518;; /* Cor de fundo ao clicar */
+.buttuon-comp-on:active {
+    background-color: #d19d1a;; /* Cor de fundo ao clicar */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2) inset; /* Sombra interna ao clicar */
 }
