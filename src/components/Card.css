@@ -3,16 +3,16 @@
     padding: 0px;
 }
 #card-principal{
-    background-color: black;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    background-color: #000000;
+   padding-top: 50px;
+   padding-bottom: 50px;
 }
 .container-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
-    max-width: 1200px;
+    padding: 20px;
+    max-width: 1220px;
     margin: 0 auto;
     
 }
@@ -24,12 +24,12 @@
   flex-grow: 1;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px #888, 0 0 10px rgba(0, 0, 0, 0);
   transition: box-shadow 0.3s ease-in-out;
   color: white;
   width: auto;
   height: 100px;
   justify-content: center;
+  max-width: 300px;
 }
 
 .imagem {
@@ -38,31 +38,38 @@
     transition: transform 0.6s; /* Adicione uma transição suave */
   }
 
-/* Mudança */
-/* .card-vermelho {
-    background-color: #D64433;
- 
-}
-.card-amarelo {
-    background-color: #dda518;
-}
-.card-verde {
-    background-color: #006933;;
-} */
 
 .card-vermelho, .card-amarelo, .card-verde {
     display: flex;
-    padding: 20px;
-    color: black; /* Texto branco para contraste com o fundo vermelho */
+    padding: 35px; /* ajustar para 20px telas para mobile */
+    color: black; 
     background-color: white;
+    margin-top: 25px;
+  
 }
 
 .coluna-imagem, .coluna-texto {
     padding: 10px;
 }
-
+.coluna-texto h3{
+    font-size: 26px;
+    padding: 5px;
+    margin-top: -10px;
+    margin-bottom: -12px;
+    
+    
+}
+.coluna-texto p{
+    padding: 5px;
+    color: #000000;
+}
+.coluna-texto{
+    width: 50%;
+    padding: 5px;
+    margin-top: -12px;
+}
 .coluna-imagem {
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center; /* Centraliza a imagem verticalmente */
     justify-content: center; /* Centraliza a imagem horizontalmente */
@@ -77,18 +84,43 @@
     width: 60%;
 }
 
-/* #button-compra-online {
-    color: yellow;
-    cursor: pointer; 
-    text-decoration: underline;
-} */
 
 @media screen and (max-width: 768px) {
   .card {
       padding: 35px; /* Reduzir o espaçamento interno para telas menores */
       flex-wrap: wrap;
   }
-
+  .card-vermelho, .card-verde, .card-amarelo {
+    flex-grow: 2;
+    text-align: center;
+    margin: 10px;
+    padding: 50px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+    color: white;
+    width: auto;
+    height: 100px;
+    justify-content: center;
+    max-width: 300px;
+  }
+  
+  .imagem {
+      width: 90px;
+      height: 100px;
+      transition: transform 0.6s; /* Adicione uma transição */
+    }
+  
+  
+  .card-vermelho, .card-amarelo, .card-verde {
+      display: flex;
+      padding: 20px; /* ajustar para 20px telas para mobile */
+      color: black; 
+      background-color: white;
+      margin-top: 25px;
+    
+  }
 
   
 }

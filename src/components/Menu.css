@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.areacardapioprincipal {
+  background-color: black;
+}
+#filtrocardapio {
+  width: 600px;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#filtrocardapio h1, p {
+  color: white;
+  margin-top: 15px;
+}
+
+#filtrocardapio p {
+  color: white;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.filtro {
+  justify-content: center;
+  display: flex;
+  gap: 35px;
+  margin-top: 18px;
+  padding: 20px;
+}
+.filtro-btn {
+  background-color: #181616;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  border-radius: 8px;
+  width: 100px;
+}
+.filtro-btn:hover {
+  background-color: #dda518;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  #filtrocardapio {
+      width: 500px;
+      align-items: center;
+      justify-content: center;
+
+  }
+  #filtrocardapio h1 {
+      color: white;
+      margin-top: 15px;
+      font-size: 23px;
+  }
+  #filtrocardapio p {
+      color: white;
+      margin-top: 15px;
+      font-size: 17px;
+  }
+  .containeritem{
+    margin: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #filtrocardapio {
+      width: 300px;
+      margin: 12px;
+  }
+}
+/* Estilização da parte dos cards do cardapio */
+.containerdeitem {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cria colunas com no mínimo 300px de largura */
+  gap: 28px; /* Espaçamento entre os itens */
+  padding-bottom: 60px;
+}
+.item-pedido {
+  background-color: #181616;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.item-pedido:hover {
+  background-color: #252424;
+  transition: 2s;
+
+}
+.textdescricao{
+  text-align: left;
+}
+.img-item {
+  width: 160px;
+  height: 160px;
+  padding: 15px;
+}
+#nomelanche {
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  letter-spacing: -1px;
+  margin: auto;
+}
+
+#valor {
+  font-size: 20px;
+  text-align: left;
+  color: #dda518;
+  margin-top: -8px;
+  padding: 18px;
+}
+
+@media screen and (min-width: 898px) and (max-width: 1400px){
+  .containerdeitem {
+    display: grid;
+    gap: 28px; /* Espaçamento entre os itens */
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+}
+
+@media screen and (min-width: 450px) and (max-width: 898px){
+  .containerdeitem {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Cria colunas com no mínimo 300px de largura */
+    gap: 28px; /* Espaçamento entre os itens */
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  .containerdeitem {
+      grid-template-columns: repeat(2,  170px); /* Duas colunas */
+      gap: 10px;
+      justify-content: center;
+      padding-bottom: 60px;
+      margin-left: 25px;
+      margin-right: 25px;
+     
+  }
+  .img-item{
+      width: 140px;
+      height: 120px;
+      padding: 0px;
+  }
+  .button-comp-on {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+  /* Estilos específicos para o Cardápio */
+  .estilizacao-cardapio {
+    color: white; /* Exemplo de cor de texto diferente */
+    font-weight: bold; /* Exemplo de estilo de fonte diferente */
+    width: 155px;
+  }
+  
+}

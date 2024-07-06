@@ -1,0 +1,61 @@
+.video-wrapper {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Garante que a altura do contêiner cubra a altura da tela */
+}
+
+.video-container {
+  position: relative;
+  width: 60%; /* Ajuste a largura conforme necessário */
+  padding-top: 33.75%; /* Mantém a proporção 16:9 (9/16 * 60%) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 460px) and (max-width: 898px){
+  .video-wrapper {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Garante que a altura do contêiner cubra a altura da tela */
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    padding-top: 45.75%; /* Mantém a proporção 16:9 (9/16 * 60%) */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+@media screen and (max-width: 460px){
+  .video-wrapper {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Garante que a altura do contêiner cubra a altura da tela */
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    padding-top: 60.75%; /* Mantém a proporção 16:9 (9/16 * 60%) */
+  }
+  
+}

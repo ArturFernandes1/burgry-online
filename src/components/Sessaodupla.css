@@ -1,112 +1,64 @@
-/* 
-.sessao-cards{
+.sessao-cards {
     background-color: black;
+    padding: 40px;
 }
+
 .sessao-subcards {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-.sessao-card1{
-    background-color: #161616;
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    border-radius: 8px;
-    padding: 35px;
-    margin: 25px;
-    color: white;
-
-    width: 500px;
-    height: 250px; 
-}
-
-#frasepromocao{
-    color: #dda518;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.sessao-image {
-    width: 140px; 
-    height: 140px; 
-    margin-right: -19px;
-    margin-left: 15px;
-    padding: 10px;
-}
-
-.sessao-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.sessao-subcards h2, .sessao-subcards p {
-    margin: 5px 0;
-}
-
-@media screen and (max-width: 778px) {
-    .sessao-subcards {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        flex-direction: column;
-    }
-    .sessao-card1{
-       margin: 15px;
-    }
-    
-} 
-
- */
- .sessao-cards{
-    background-color: black;
-}
- .sessao-subcards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Adiciona flex-wrap para melhor responsividade */
 }
 
 .sessao-card {
-    flex: 1;
-    max-width: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    background-color: #6b6868;
-    border-radius: 6px;
-    
-}
-
-.sessao-content {
-    flex-grow: 1;
-}
-
-.sessao-image {
-    width: 350px;
     height: auto;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 280px;
+}
+.comptext, p{
+    font-size: 17px;
+ 
+}
+.comptext, h2{
+    font-size: 20px;
+ 
+}
+.sessao-image {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    max-height: 200px;
 }
 
+#card-item1 {
+    background-color: blueviolet;
+}
 
-@media (min-width: 600px) {
+#card-item2 {
+    background-color: chocolate;
+}
+#card-item3 {
+    background-color: rgb(233, 67, 80);
+}
+
+@media screen and (max-width: 768px) {
+    .sessao-subcards {
+        flex-direction: column;
+    }
+
     .sessao-card {
-        flex-direction: row;
-        max-width: 500px;
+        padding: 10px;
+        width: 100%; /* Define a largura dos cards para 100% em telas menores */
+        max-width: none; /* Remove a largura máxima dos cards em telas menores */
     }
 
-    .sessao-content, .sessao-image {
-        flex: 1;
-    }
-
-    .sessao-content {
-        padding-right: 20px;
+    .sessao-image {
+        max-width: 200px;
+        max-height: 180px;
     }
 }

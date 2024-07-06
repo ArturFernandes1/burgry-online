@@ -7,12 +7,12 @@
     text-decoration: none; /* Nenhuma decoração de texto */
     display: inline-block; /* Tipo de exibição */
     font-size: 16px; /* Tamanho da fonte */
-    border-radius: 8px; /* Bordas arredondadas */
+    border-radius: 18px; /* Bordas arredondadas */
     cursor: pointer; /* Cursor em forma de ponteiro */
     transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para cor de fundo e sombra */
     width: 180px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .buttuon-comp-on:hover {

@@ -14,7 +14,7 @@ const Navbar = () => {
                 <h1 className="titleh1"><samp id="spam1">BUR</samp> <samp id="spam2">GRY</samp></h1>
                 <a href="/">HOME</a>
                 <a href="/Sobre">SOBRE NÓS</a>
-                <a href="/Contato">CONTATE-NOS</a>
+                <a href="/Contato">CONTATO</a>
                 <a href="/Cardapio"  id='item-last'>CARDÁPIO</a>
                 <a href="javascript:void(0);" className="icon" onClick={toggleMenu}>
                     <span>&#9776;</span>

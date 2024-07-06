@@ -1,0 +1,51 @@
+/* Estilos para a página de apresentação da Burgry */
+
+.burgry-presentation {
+    margin: 40PX;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .burgry-presentation h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+    color: black;
+  }
+  
+  .burgry-presentation p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: black;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .burgry-presentation {
+      padding: 10px;
+    }
+  
+    .burgry-presentation h1 {
+      font-size: 2rem;
+    }
+  
+    .burgry-presentation p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .burgry-presentation {
+      padding: 5px;
+    }
+  
+    .burgry-presentation h1 {
+      font-size: 1.8rem;
+    }
+  
+    .burgry-presentation p {
+      font-size: 0.9rem;
+    }
+  }
+  

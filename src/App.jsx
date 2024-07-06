@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import "./components/GlobalStyles.css" // Importe o arquivo CSS global
 import Home from './pages/home.jsx'
 import Sobre from './pages/Sobre.jsx'
 import Cardapio from './pages/Cardapio.jsx'

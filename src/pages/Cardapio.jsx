@@ -1,13 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-
-
+import Footer from '../components/Footer';
+import Menu from '../components/Menu';
 
 function Cardapio() {
   return (
     <div>
       <Navbar/>
-      Olá, sou o CARDAPIO DA PAGIANA!
+      <Menu/>
+      <Footer/>
     </div>
   );
 }

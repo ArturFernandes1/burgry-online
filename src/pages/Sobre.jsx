@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import BurgryPresentation from '../components/BurgryPresentation';
 
 function Sobre() {
   return (
     <div>
       <Navbar/>
-      Olá, sou o SOBRE DA PAGIANA!
+      <BurgryPresentation/>
     </div>
   );
 }
