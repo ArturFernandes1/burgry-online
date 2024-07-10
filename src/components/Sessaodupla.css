@@ -26,6 +26,7 @@
 }
 .comptext, h2{
     font-size: 20px;
+    color: white;
  
 }
 .sessao-image {
@@ -34,27 +35,25 @@
     max-width: 280px;
     max-height: 200px;
 }
-
-#card-item1 {
-    background-color: blueviolet;
+#card-item1, #card-item2, #card-item3{
+    background-color: #232222;
 }
-
-#card-item2 {
-    background-color: chocolate;
-}
-#card-item3 {
-    background-color: rgb(233, 67, 80);
-}
-
 @media screen and (max-width: 768px) {
     .sessao-subcards {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
     }
 
     .sessao-card {
         padding: 10px;
-        width: 100%; /* Define a largura dos cards para 100% em telas menores */
-        max-width: none; /* Remove a largura máxima dos cards em telas menores */
+        width: 100%;
+        max-width: none; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .sessao-image {

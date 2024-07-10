@@ -65,7 +65,7 @@ const Menu = () => {
                 <div className="item-pedido lanche">
                     <img src={burger03} alt="Hambúrguer de carne com queijo" className="img-item" />
                     <p id="nomelanche">Hambúrger de Carne de Frango</p>
-                    <p>Carne de frango, coberto com queijo derretido, alface fresco e tomate.</p>
+                    <p>Carne de frango, com queijo, alface fresco e tomate.</p>
                     <p id="valor">R$21,99</p>
                     <ButtonCompOn className="estilizacao-cardapio" />
                 </div>
@@ -86,15 +86,15 @@ const Menu = () => {
                 <div className="item-pedido bebida">
                     <img src={drink06} alt="Suco de Laranja" className="img-item" />
                     <p id="nomelanche">Suco de Laranja</p>
-                    <p>Suco de laranja natural, sem adição de açúcar.</p>
+               d     <p>Suco de laranja natural, sem adição de açúcar.</p>
                     <p id="valor">R$12,99</p>
                     <ButtonCompOn className="estilizacao-cardapio" />
                 </div>
                 <div className="item-pedido bebida">
                     <img src={drink01} alt="Suco Detox" className="img-item" />
                     <p id="nomelanche">Suco Detox</p>
-                    <p>Uma mistura saudável de couve, limão e gengibre.</p>
-                    <p id="valor">R$14,99</p>
+                    <p> Suco natural uma mistura saudável de couve, limão e gengibre.</p>
+                  <p id="valor">R$14,99</p>
                     <ButtonCompOn className="estilizacao-cardapio" />
                 </div>
                 <div className="item-pedido bebida">
@@ -107,28 +107,28 @@ const Menu = () => {
                 <div className="item-pedido bebida">
                     <img src={drink08} alt="Suco de Morango" className="img-item" />
                     <p id="nomelanche">Suco de Morango</p>
-                    <p>Feito com morangos frescos, sem adição de açúcar.</p>
+                    <p>Suco natural, sem adição de açúcar.</p>
                     <p id="valor">R$14,99</p>
                     <ButtonCompOn className="estilizacao-cardapio" />
                 </div>
               <div className="item-pedido lanche">
                     <img src={salgados01A} alt="Panqueca Recheada" className="img-item" />
                     <p id="nomelanche">Panqueca Recheada</p>
-                    <p>Panqueca fina recheada com carne moída temperada e queijo, gratinada ao forno.</p>
-                    <p id="valor">R$5,99</p>
+                    <p>Panqueca recheada temperada e queijo, gratinada ao forno.</p>
+                    <p id="valor">R$7,00</p>
                     <ButtonCompOn className="estilizacao-cardapio" />
                 </div>
                 <div className="item-pedido lanche">
                     <img src={salgados02A} alt="Esfirra de Carne" className="img-item" />
                     <p id="nomelanche">Esfirra de Carne</p>
-                    <p>Esfirra recheada com carne moída temperada, assada na perfeição.</p>
+                    <p>Esfirra recheada com carne moída temperada.</p>
                     <p id="valor">R$4,99</p>
                     <ButtonCompOn className="estilizacao-cardapio" />
                 </div>
                 <div className="item-pedido comida">
                     <img src={food10} alt="Prato Executivo" className="img-item" />
                     <p id="nomelanche">Porção de Espetinho</p>
-                    <p>Carne ao ponto e salada fresca.</p>
+                    <p>Espetinho de carne com acompanhado de vinagrete.</p>
                     <p id="valor">R$15,99</p>
                     <ButtonCompOn className="estilizacao-cardapio" />
                 </div>

@@ -139,6 +139,9 @@
 }
 
 @media screen and (max-width: 450px) {
+  .areacardapioprincipal{
+    margin-top: -14px;
+  }
   .containerdeitem {
       grid-template-columns: repeat(2,  170px); /* Duas colunas */
       gap: 10px;
